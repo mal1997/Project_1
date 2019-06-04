@@ -1,0 +1,73 @@
+.footer
+ background-color: #f2f2f2
+
+.footer__wrap
+ width: 280px
+ margin: 0 auto
+
+ text-align: center
+
+.footer__logo
+ margin: 0  auto
+ margin-top: 39px
+ margin-bottom: 39px
+
+.footer__social-list 
+ list-style: none
+ padding: 0
+ margin: 0
+
+ padding-left: 72px
+ padding-right: 72px
+
+ display: flex
+ justify-content: space-between
+ 
+ border-top: 1px solid #d9d9d9
+ border-bottom: 1px solid #d9d9d9
+.footer__social-item
+ margin-top: 25px
+ margin-bottom: 25px
+ fill: #959595
+ &:nth-child(1)
+  width: 22px
+  height: 16px
+ &:nth-child(2)
+  width: 16px
+  height: 16px
+ &:nth-child(3)
+  width: 19px
+  height: 19px
+ &:hover
+  fill: #68b738
+ &:active
+  opacity: 0.3
+
+@media (min-width: 768px)
+ .footer
+  border: 1px solid #f2f2f2 
+ .footer__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  margin-top: 55px
+  margin-bottom: 55px
+  
+  width: 708px
+  text-align: left
+
+ .footer__logo
+  margin: 0
+  padding: 0
+ 
+ .footer__social-list
+  border: none
+  margin: 0
+  padding: 0
+
+  width: 130px
+  
+@media (min-width: 1220px)
+ .footer__wrap
+  width: 1220px

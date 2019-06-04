@@ -1,0 +1,92 @@
+.menu-nav 
+ display: none
+ width: 320px
+ margin: 0 auto
+
+.menu-nav__list
+ margin: 0 
+ padding: 0
+ list-style: none 
+ 
+ text-align: center
+
+.menu-nav--open
+ display: block
+ 
+.site-list__item
+ text-decoration: none
+
+ display: block
+ padding-top: 25px
+ padding-bottom: 25px
+
+ border-top: 1px solid #e6e6e6
+ &:nth-child(3)
+  border-bottom: 1px solid #e6e6e6
+
+.site-list__item 
+ font-size: 20px
+ font-weight: 500 
+ text-transform: uppercase
+ color: #111111
+
+@media (min-width: 768px)
+ .menu-nav 
+  margin: 0
+
+  display: block
+  
+  width: 450px
+
+ .menu-nav__list
+  display: flex
+  justify-content: space-between
+  
+ .site-list__item
+  border: none
+  margin: 0
+  padding: 0
+  
+  font-size: 18px 
+  font-weight: 400 
+  &:nth-child(3)
+   border: none
+ .site-list__item li
+  &:hover
+   opacity: 0.6
+  &:active
+   opacity: 0.3
+
+ .site-list__item--active
+  position: relative
+  &::after 
+   content: ''
+
+   position: absolute 
+   right: 0
+   bottom: -8px
+   left: 0
+
+   height: 2px
+
+   background-color: #68b738 
+  
+@media (min-width: 1220px)
+ .menu-nav
+  width: 490px
+
+ .site-list__item
+  font-size: 20px
+  color: #fff
+
+ .site-list__item li
+  &:hover
+   opacity: 0.6
+  &:active
+   opacity: 0.3
+
+ .site-list__item--active
+  &::after 
+   bottom: -9px
+   height: 3px
+   background-color: #fff
